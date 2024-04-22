@@ -65,6 +65,10 @@
         id="poster"
         src="./GLBs/FullPosterSceneComplete.glb"
       ></a-asset-item>
+      <a-asset-item
+        id="extraSnake"
+        src="./GLBs/ExtraSnake.glb"
+      ></a-asset-item>
       <img id="floor" src="floorTex.jpg">
       <img id="bg" src="BG.png">
         </a-assets>
@@ -87,6 +91,13 @@
               position="0 2.5 -2"
               scale="1 1 1"
               src="#poster"
+              animation-mixer
+            ></a-gltf-model>
+            <a-gltf-model
+              rotation="0 0 0 "
+              position="0 4.4 -1.9"
+              scale="1 1 1"
+              src="#extraSnake"
               animation-mixer
             ></a-gltf-model>
             <a-gltf-model

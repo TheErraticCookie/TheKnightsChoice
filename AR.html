@@ -182,6 +182,10 @@
           id="chapter6"
           src="./GLBs/chapter6.glb"
         ></a-asset-item>
+        <a-asset-item
+        id="extraSnake"
+        src="./GLBs/ExtraSnake.glb"
+      ></a-asset-item>
       </a-assets>
       <a-entity raycaster="objects: .clickable" cursor="rayOrigin: mouse;"></a-entity>"
       <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="near: 10; far: 10000; objects: .clickable"></a-camera>
@@ -534,7 +538,16 @@
           animation-mixer
         ></a-gltf-model>
       </a-entity>
-
+      <a-entity id="extraSnake" mindar-image-target="targetIndex: 12">
+        
+        <a-gltf-model
+        rotation="0 0 0 "
+        position="0 0.22 0"
+        scale="1.1 1.1 1.1"
+        src="#extraSnake"
+        animation-mixer
+      ></a-gltf-model>
+      </a-entity>
 
     </a-scene>
   </body>
